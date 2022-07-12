@@ -1,0 +1,11 @@
+cd label-studio-ml-backend
+
+# Install label-studio-ml and its dependencies
+pip install -U -e .
+
+# Install example dependencies
+pip install -r label_studio_ml/examples/requirements.txt
+
+label-studio-ml init my_ml_backend --script label_studio_ml/examples/simple_text_classifier/simple_text_classifier.py
+
+label-studio-ml start my_ml_backend

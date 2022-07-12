@@ -1,0 +1,4 @@
+torch
+torchvision
+mmcv==1.3.6
+opencv-python
